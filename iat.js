@@ -4,22 +4,16 @@ const path = require('path');
 
 const server = http.createServer((req, res) => {
   if (req.url === '/') {
-    // If the URL is '/', serve the iat.html file
-    const filePath = path.join(__dirname, './index.html');
-
-    // Read the content of the HTML file
-    fs.readFile(filePath, 'utf8', (err, content) => {
+    fs.readFile('./html/index.html', 'utf8', (err, data) => {
       if (err) {
-        // If there is an error reading the file, return a 500 response
         res.writeHead(500);
         res.end('Internal Server Error');
-      } else {
-        // Set the appropriate content type for HTML
-        res.writeHead(200, { 'Content-Type': 'text/html' });
-        
-        // Send the HTML content as the response
-        res.end(content);
+        return;
       }
+
+      res.setHeader('Content-Type', 'text/html');
+      res.writeHead(200);
+      res.end(data);
     });
   } else {
     // If the URL is not '/', return a 404 response
