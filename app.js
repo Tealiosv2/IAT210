@@ -7,7 +7,7 @@ app.use(express.static('html'));
 
 // Define a route to serve your HTML page
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + './html/index.html');
+  res.sendFile('./html/index.html');
 });
 
 // Start the server
