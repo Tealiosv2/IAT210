@@ -1,17 +1,15 @@
 const express = require('express');
+
+// Creating an Express application
 const app = express();
+const port = 10000; // You can use any port you prefer
 
-
-// Serve static files from the 'public' folder
-app.use(express.static('html'));
-
-// Define a route to serve your HTML page
+// Define a route
 app.get('/', (req, res) => {
-  res.sendFile('./html/index.html');
+  res.send('Hello, World!');
 });
 
 // Start the server
-const port = process.env.PORT || 10000;
 app.listen(port, () => {
-    console.log(`Server is running on http://localhost:${port}/`);
+  console.log(`Server is running on http://localhost:${port}`);
 });
