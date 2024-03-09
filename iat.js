@@ -15,7 +15,47 @@ const server = http.createServer((req, res) => {
       res.writeHead(200);
       res.end(data);
     });
-  } else {
+  } 
+  else if (req.url === '/about') {
+    fs.readFile('./html/about.html', 'utf8', (err, data) => {
+      if (err) {
+        res.writeHead(500);
+        res.end('Internal Server Error');
+        return;
+      }
+
+      res.setHeader('Content-Type', 'text/html');
+      res.writeHead(200);
+      res.end(data);
+    });
+  }
+  else if (req.url === '/rules'){
+    fs.readFile('./html/rules.html', 'utf8', (err, data) => {
+      if (err) {
+        res.writeHead(500);
+        res.end('Internal Server Error');
+        return;
+      }
+
+      res.setHeader('Content-Type', 'text/html');
+      res.writeHead(200);
+      res.end(data);
+    });
+  }
+  else if (req.url === '/backstory'){
+    fs.readFile('./html/backstory.html', 'utf8', (err, data) => {
+      if (err) {
+        res.writeHead(500);
+        res.end('Internal Server Error');
+        return;
+      }
+
+      res.setHeader('Content-Type', 'text/html');
+      res.writeHead(200);
+      res.end(data);
+    });
+  }
+  else {
     // If the URL is not '/', return a 404 response
     res.writeHead(404);
     res.end('Not Found');
