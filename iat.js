@@ -2,6 +2,12 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
+const express = require('express');
+
+const app = express();
+
+app.use("/css", express.static("/css"));
+
 const server = http.createServer((req, res) => {
   if (req.url === '/') {
     fs.readFile('./html/index.html', 'utf8', (err, data) => {
