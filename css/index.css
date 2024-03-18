@@ -1,17 +1,86 @@
-/* @font-face {
-    font-family: 'Mona Sans';
-    src:
-      url('/assets/MonaSans-Regular.woff2') format('woff2 supports variations'),
-      url('/assets/MonaSans-Regular.woff2') format('woff2-variations');
+@font-face {
+    font-family: "MonaSans";
+    src: url("Mona-Sans.woff2") format("woff2 supports variations"),
+        url("Mona-Sans.woff2") format("woff2-variations");
     font-weight: 200 900;
     font-stretch: 75% 125%;
-  }
-  
+}
+
+@font-face {
+    font-family: "DeathCrow";
+    src: url("DEATHCROW.ttf");
+}
+
+@font-face {
+    font-family: "ProtoMono";
+    src: url("ProtoMono-Regular.ttf");
+}
+
 * {
-    font-family: 'Mona Sans';
-} */
+    font-family: ProtoMono;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    /* 
+    font-stretch: ultra-expanded; */
 
+    margin: 0;
+    padding: 0;
+}
 
-h1 {
-    color: yellow;
+body {
+    background-color: black;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+.header {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.header h1 {
+    font-family: DeathCrow;
+    font-size: 7em;
+    font-weight: 200;
+
+    text-transform: uppercase;
+    text-shadow: 20px 0px 10px rgba(255, 255, 255, 0.2),
+        -20px 0px 10px rgba(255, 255, 255, 0.2);
+}
+
+a {
+    font-size: 0.8em;
+    /* font-weight: bold; */
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.header > div {
+    margin-top: 2em;
+}
+
+.header > div > a:not(:first-child) {
+    margin-left: 5em;
+}
+
+.header > div > a:not(:first-child):not(:last-child) {
+    color: rgba(255, 255, 255, 0.6);
+    transition: 0.2s;
+}
+
+.header > div > a:not(:first-child):not(:last-child):hover {
+    color: rgba(255, 255, 255, 1);
+    transition: 0.2s;
+}
+
+.header > div > a:first-child,
+.header > div > a:last-child {
+    text-shadow: 5px 0px 5px rgba(255, 255, 255, 1),
+        -5px 0px 5px rgba(255, 255, 255, 1);
+}
+
+.body-content {
+    margin-top: 5em;
 }
