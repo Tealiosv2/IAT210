@@ -25,18 +25,18 @@ app.use("/html", express.static("./html"));
 //returns the main page
 
 app.get("/", function(req, res) {
-    res.send(fs.readFileSync("/html/index.html", "utf8"));
+    res.send(fs.readFileSync("./html/index.html", "utf8"));
   });
 
 app.get("/about", function(req, res) {
-    res.send(fs.readFileSync("/html/about.html", "utf8"));
+    res.send(fs.readFileSync("./html/about.html", "utf8"));
   });
 
 app.get("/rules", function(req, res) {
-    res.send(fs.readFileSync("/html/rules.html", "utf8"));
+    res.send(fs.readFileSync("./html/rules.html", "utf8"));
   });
 app.get("/backstory", function(req, res) {
-    res.send(fs.readFileSync("/html/backstory.html", "utf8"));
+    res.send(fs.readFileSync("./html/backstory.html", "utf8"));
   });
 
 
