@@ -16,11 +16,22 @@
     src: url("ProtoMono-Regular.ttf");
 }
 
+@font-face {
+    font-family: "HyperMarket";
+    src: url("Hypermarket-Regular.ttf");
+}
+
+@font-face {
+    font-family: "HyperMarketExp";
+    src: url("Hypermarket-Exp.ttf");
+}
+
+
 * {
-    font-family: ProtoMono;
+    font-family: HyperMarket;
     color: white;
     text-decoration: none;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     /* 
     font-stretch: ultra-expanded; */
 
@@ -30,8 +41,12 @@
 
 body {
     background-color: black;
+
     margin-top: 5em;
     margin-bottom: 5em;
+
+    /* margin-left: 15em;
+    margin-right: 15em; */
 }
 
 .header {
@@ -52,9 +67,17 @@ body {
 }
 
 a {
-    font-size: 0.8em;
+    font-size: 0.7em;
     /* font-weight: bold; */
     color: rgba(255, 255, 255, 0.6);
+}
+
+p {
+    line-height: 1.5em;
+}
+
+.header {
+    text-transform: uppercase;
 }
 
 .header > div {
@@ -82,5 +105,51 @@ a {
 }
 
 .body-content {
+    margin-left: 30em;
+    margin-right: 30em;
     margin-top: 5em;
+    
+}
+
+.body-content > *:not(:first-child) {
+    margin-top: 5em
+}
+
+.body-content p {
+    font-family: HyperMarketExp;
+    /* font-style: italic; */
+    /* font-weight: 100; */
+    
+}
+
+.center {
+    text-align: center;
+}
+
+.greyed-out {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.section-title {
+    font-size: 1em;
+}
+
+.section-text {
+    font-size: 0.7em;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.content-section > *:not(:first-child) {
+    margin-top: 2.5em;
+}
+
+.content-prev {
+    text-justify: inter-word;
+    font-size: 0.7em;
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
 }
