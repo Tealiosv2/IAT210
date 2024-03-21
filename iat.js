@@ -16,7 +16,7 @@ const fs = require("fs");
 app.use("/css", express.static("./css"));
 app.use("/js", express.static("./js"));
 app.use("/html", express.static("./html"));
-app.use("/imag", express.static("./imag"));
+app.use("/img", express.static("./img"));
 
 
 
@@ -39,7 +39,9 @@ app.get("/rules", function(req, res) {
 app.get("/backstory", function(req, res) {
     res.send(fs.readFileSync("./html/backstory.html", "utf8"));
   });
-
+app.get("/pillars", function(req, res) {
+  res.send(fs.readFileSync("./html/pillars.html", "utf8"));
+});
 
 
 // RUN SERVER
