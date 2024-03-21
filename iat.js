@@ -16,6 +16,7 @@ const fs = require("fs");
 app.use("/css", express.static("./css"));
 app.use("/js", express.static("./js"));
 app.use("/html", express.static("./html"));
+app.use("/imag", express.static("./imag"));
 
 
 
