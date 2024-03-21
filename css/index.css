@@ -1,29 +1,29 @@
 @font-face {
     font-family: "MonaSans";
-    src: url("Mona-Sans.woff2") format("woff2 supports variations"),
-        url("Mona-Sans.woff2") format("woff2-variations");
+    src: url("/css/fonts/Mona-Sans.woff2") format("woff2 supports variations"),
+        url("/css/fonts/Mona-Sans.woff2") format("woff2-variations");
     font-weight: 200 900;
     font-stretch: 75% 125%;
 }
 
 @font-face {
     font-family: "DeathCrow";
-    src: url("DEATHCROW.ttf");
+    src: url("/css/fonts/DEATHCROW.ttf");
 }
 
 @font-face {
     font-family: "ProtoMono";
-    src: url("ProtoMono-Regular.ttf");
+    src: url("/css/fonts/ProtoMono-Regular.ttf");
 }
 
 @font-face {
     font-family: "HyperMarket";
-    src: url("Hypermarket-Regular.ttf");
+    src: url("/css/fonts/Hypermarket-Regular.ttf");
 }
 
 @font-face {
     font-family: "HyperMarketExp";
-    src: url("Hypermarket-Exp.ttf");
+    src: url("/css/fonts/Hypermarket-Exp.ttf");
 }
 
 
