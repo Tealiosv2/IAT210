@@ -19,10 +19,6 @@ app.use("/html", express.static("./html"));
 app.use("/img", express.static("./img"));
 
 
-
-
-
-
 //returns the main page
 
 app.get("/", function(req, res) {
@@ -39,9 +35,15 @@ app.get("/rules", function(req, res) {
 app.get("/backstory", function(req, res) {
     res.send(fs.readFileSync("./html/backstory.html", "utf8"));
   });
+
 app.get("/pillars", function(req, res) {
   res.send(fs.readFileSync("./html/pillars.html", "utf8"));
 });
+
+app.get("/board", function(req, res) {
+  res.send(fs.readFileSync("./html/board.html", "utf8"));
+});
+
 
 
 // RUN SERVER

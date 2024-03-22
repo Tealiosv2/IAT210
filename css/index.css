@@ -127,7 +127,11 @@ p {
 }
 
 .greyed-out {
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.greyed-out * {
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .section-title {
@@ -152,4 +156,20 @@ p {
 
 .bold {
     font-weight: bold;
+}
+
+.section-half {
+    display: flex;
+}
+
+.section-half > div {
+    width: 50%;
+}
+
+.media {
+    border: white solid 1px;
+}
+
+.image-backstory {
+    margin-left: 3em;
 }
