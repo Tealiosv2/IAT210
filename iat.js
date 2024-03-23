@@ -18,6 +18,7 @@ app.use("/js", express.static("./js"));
 app.use("/html", express.static("./html"));
 app.use("/img", express.static("./img"));
 app.use("/pdf", express.static("./pdf"));
+app.use("/meetinglogs", express.static("./meetinglogs"));
 
 
 //returns the main page
@@ -47,6 +48,10 @@ app.get("/board", function(req, res) {
 
 app.get("/flowchart", function(req, res) {
   res.send(fs.readFileSync("./html/flowchart.html", "utf8"));
+});
+
+app.get("/meetinglogs", function(req, res) {
+  res.send(fs.readFileSync("./html/meetinglogs.html", "utf8"));
 });
 
 
