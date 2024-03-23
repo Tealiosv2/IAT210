@@ -17,6 +17,7 @@ app.use("/css", express.static("./css"));
 app.use("/js", express.static("./js"));
 app.use("/html", express.static("./html"));
 app.use("/img", express.static("./img"));
+app.use("/pdf", express.static("./pdf"));
 
 
 //returns the main page
