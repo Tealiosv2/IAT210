@@ -44,6 +44,10 @@ app.get("/board", function(req, res) {
   res.send(fs.readFileSync("./html/board.html", "utf8"));
 });
 
+app.get("/flowchart", function(req, res) {
+  res.send(fs.readFileSync("./html/flowchart.html", "utf8"));
+});
+
 
 
 // RUN SERVER
