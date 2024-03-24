@@ -56,7 +56,7 @@ app.get("/meetinglogs", function(req, res) {
 });
 
 app.get("/gameDynamics", function(req, res) {
-  res.send(fs.readFileSync("./html/gameDynamics.html", "utf8"));
+  res.send(fs.readFileSync("./html/gamedynamics.html", "utf8"));
 });
 
 app.get("/playSession", function(req, res) {
