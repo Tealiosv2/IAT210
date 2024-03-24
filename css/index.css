@@ -148,6 +148,8 @@ p {
     margin-top: 2.5em;
 }
 
+
+
 .content-prev {
     text-justify: inter-word;
     font-size: 0.7em;
@@ -158,11 +160,11 @@ p {
     font-weight: bold;
 }
 
-.section-half {
+.section-horizontal {
     display: flex;
 }
 
-.section-half > div {
+.section-horizontal > div {
     width: 50%;
 }
 
@@ -180,4 +182,18 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     aspect-ratio : 1 / 1.1;
+}
+
+body > div {
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.cards {
+    justify-content: space-between;
+}
+
+
+.cards > img:not(:first-child) {
+    margin-left: 1em;
 }

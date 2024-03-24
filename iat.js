@@ -64,6 +64,12 @@ app.get("/playSession", function(req, res) {
 });
 
 
+app.get("/gallery", function(req, res) {
+  res.send(fs.readFileSync("./html/gallery.html", "utf8"));
+});
+
+
+
 
 // RUN SERVER
 
