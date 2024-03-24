@@ -63,6 +63,10 @@ app.get("/playSession", function(req, res) {
   res.send(fs.readFileSync("./html/playSession.html", "utf8"));
 });
 
+app.get("/quantitative", function(req, res) {
+  res.send(fs.readFileSync("./html/quantitativeAnalysis.html", "utf8"));
+});
+
 
 
 // RUN SERVER
