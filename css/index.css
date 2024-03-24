@@ -179,4 +179,5 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    aspect-ratio : 1 / 1.1;
 }
