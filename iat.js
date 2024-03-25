@@ -73,6 +73,11 @@ app.get("/gallery", function(req, res) {
 });
 
 
+app.get("/contributions", function(req, res) {
+  res.send(fs.readFileSync("./html/contributions.html", "utf8"));
+});
+
+
 
 
 // RUN SERVER

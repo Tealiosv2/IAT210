@@ -197,3 +197,8 @@ body > div {
 .cards > img:not(:first-child) {
     margin-left: 1em;
 }
+
+.youtube {
+    height: 40vw;
+    width: 100%;
+}
