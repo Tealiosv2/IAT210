@@ -72,6 +72,10 @@ app.get("/gallery", function(req, res) {
   res.send(fs.readFileSync("./html/gallery.html", "utf8"));
 });
 
+app.get("/inspiration", function(req, res) {
+  res.send(fs.readFileSync("./html/inspiration.html", "utf8"));
+});
+
 
 
 
