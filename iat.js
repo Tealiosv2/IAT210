@@ -76,6 +76,10 @@ app.get("/inspiration", function(req, res) {
   res.send(fs.readFileSync("./html/inspiration.html", "utf8"));
 });
 
+app.get("/contributions", function(req, res) {
+  res.send(fs.readFileSync("./html/contributions.html", "utf8"));
+});
+
 
 
 
